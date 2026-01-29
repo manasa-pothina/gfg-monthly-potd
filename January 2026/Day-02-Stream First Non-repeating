@@ -1,3 +1,21 @@
+## Problem
+Find the first non-repeating character for each prefix of a string.
+
+## Approach
+- Use a frequency array to count characters.
+- Use a queue to maintain insertion order.
+- Remove repeating characters from the front of the queue.
+
+## Why Queue?
+Queue preserves order, which helps identify the first valid character.
+
+## Time Complexity
+O(n)
+
+## Space Complexity
+O(1) (fixed size frequency array)
+
+
 class Solution {
   public:
     string firstNonRepeating(string &s) {
